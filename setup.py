@@ -65,6 +65,7 @@ setup(
         'tensorflow_probability<=0.7',
         'tf-models-official',
         'tensorflow-datasets',
+        'gsutil',
     ],
     cmdclass={
         'simclr_download': DownloadSimCLRAugmentationCommand,
