@@ -60,12 +60,19 @@ setup(
         # Note that this will install tf 2.0, even though this is a tf 1.0
         # project. This is necessary because we rely on augmentation from
         # tf-models-official that wasn't added until after tf 2.0 was released.
-        'tensorflow-gpu',
+        # 'tensorflow-gpu',
         'sklearn',
-        'tensorflow_probability<=0.7',
-        'tf-models-official',
-        'tensorflow-datasets',
-        'gsutil',
+        # 'tensorflow_probability<=0.7',
+        # 'tf-models-official',
+        # 'tensorflow-datasets',
+
+        # - this is div proj reqs
+        'tensorflow-gpu==2.8.4',
+        'tensorflow-probability==0.7.0',
+        'tf-models-official==2.8.0',
+        'tensorflow-datasets==4.8.1',
+
+        'gsutil==5.17',
     ],
     cmdclass={
         'simclr_download': DownloadSimCLRAugmentationCommand,
